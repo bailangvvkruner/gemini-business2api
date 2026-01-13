@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     && apt-get autoremove -y \
     && rm -rf /var/lib/apt/lists/*
 COPY main.py .
+COPY .env .
 # 复制 core 模块
 COPY core ./core
 # 复制 util 目录
