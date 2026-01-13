@@ -22,7 +22,7 @@
 # VOLUME ["/app/data"]
 # CMD ["python", "-u", "main.py"]
 
-FROM python-alpine
+FROM python:alpine
 WORKDIR /app
 COPY requirements.txt .
 RUN apk add --no-cache --virtual .build-deps gcc musl-dev \
