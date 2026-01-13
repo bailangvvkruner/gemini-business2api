@@ -1,5 +1,5 @@
-# FROM python:3.11-slim
-FROM python:slim
+FROM python:3.11-slim
+# FROM python:slim
 WORKDIR /app
 COPY requirements.txt .
 RUN apt-get update && apt-get install -y --no-install-recommends \
