@@ -33,7 +33,7 @@ ENV/
 *~
 
 # Project specific
-.env
+# .env
 *.log
 data/stats.json
 data/settings.yaml
