@@ -10,6 +10,23 @@ license: mit
 
 #  Gemini Business2API
 
+###### 快速开始
+
+```
+docker run -d \
+  --name gemini-api \
+  -p 7860:7860 \
+  -v ./data:/app/data \
+  -e ADMIN_KEY=your_admin_key \
+  -e API_KEY=your_api_key \
+  -e PROXY=http://your-proxy:port \
+  -e ACCOUNTS_CONFIG='[{"secure_c_ses": "xxx", "csesidx": "xxx", "config_id": "xxx"}]' \
+  --restart unless-stopped \
+  gemini-api
+```
+
+
+
 将 Google Gemini Business API 转换为 OpenAI 兼容接口，支持多账户负载均衡。
 感谢Claude老师！
 
